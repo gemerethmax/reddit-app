@@ -1,7 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState ={
-    posts: [],
+    posts: [{id: 1, title: 'First Post', content: 'This is the first post', img: 'https://via.placeholder.com/150', author: 'John Doe'},
+            {id: 2, title: 'Second Post', content: 'This is the second post', img: 'https://via.placeholder.com/150', author: 'Jane Doe'},
+            {id: 3, title: 'Third Post', content: 'This is the third post', img: 'https://via.placeholder.com/150', author: 'Max Gemereth'},
+    ],
     status: 'idle', // idle | loading | succeeded | failed
     error: null,
 }
